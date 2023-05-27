@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAMZAN TRADERS</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+
+<body>
+    <!-- header -->
+    <header id="header">
+        <nav class="nav">
+            <img src="120 px.png" alt="LOGO">
+            <ul class="nav_items">
+                <li class="nav_item">
+                    <a href="http://localhost/RAMZAN%20TRADERS/home_page.html#" class="nav_link">HOME</a>
+                    <a href="http://localhost/RAMZAN%20TRADERS/product.html#" class="nav_link">PRODUCT</a>
+                    <a href="http://localhost/RAMZAN%20TRADERS/contact.html" class="nav_link">CONTACT</a>
+                    <a href="http://localhost/RAMZAN%20TRADERS/about.html" class="nav_link">ABOUT</a>
+                </li>
+            </ul>
+            <button class="button" id="form_open">LOGIN</button>
+            <button class="button" id="signup_form_open">SIGN UP</button>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section class="home">
+        <!-- Login Form -->
+        <div class="form_container">
+            <i class="uil uil-times form_close"></i>
+            <div class="login_form">
+                <form action="#">
+                    <H2>LOGIN</H2>
+                    <div class="input_box">
+                        <input type="text" id="username" placeholder="Enter Your Username">
+                        <i class="uil uil-envelope-alt email"></i>
+                    </div>
+                    <div class="input_box">
+                        <input type="password" id="username" required placeholder="Enter Your Password">
+                        <i class="uil uil-lock password"></i> 
+                        <!-- <i class="uil uil-eye-slash hide"></i> -->
+                    </div>
+
+                    <div class="option_field">
+                        <span class="checkbox">
+                            <input type="checkbox" id="check">
+                            <label for="check">Remember Me</label>
+                        </span>
+                        <a href="#" class="forget-pw">Forget Password</a>
+                    </div>
+                    <button class="button">LOGIN</button>
+
+                    <!-- <div class="login_signup">
+                        Don't have account!<a href="#" id="signup">SignUp</a>
+                    </div> -->
+                </form>
+            </div>
+        </div>
+    </section>
+
+        <!-- SignUp Form -->
+<section class="signup_home">
+        <div class="signup_body" id="111">
+            <section class="signup_container">
+                <i  class="uil uil-times signup_form_close"></i>
+                <header>SIGN UP</header>
+                <form action="#" class="signup_form">
+                    <div class="signup_input-box">
+                        <label for="name">Full Name</label>
+                        <input type="text" placeholder="Enter full name" required />
+                    </div>
+
+                    <div class="signup_input-box">
+                        <label for="cnic">CNIC</label>
+                        <input type="number" id="cnic " placeholder="Enter your CNIC" required />
+                    </div>
+
+                    <div class="signup_input-box">
+                        <label>Shop Name</label>
+                        <input type="text" placeholder="Enter shop name" required />
+                    </div>
+
+                    <div class="signup_column">
+                        <div class="signup_input-box">
+
+
+                            <label>Phone Number </label>
+                            <input type=”number” id="phoneNumberInput" placeholder="Enter phone number" required>
+
+                        </div>
+                    </div>
+                    <div class="signup_input-box address">
+                        <label>Address</label>
+                        <input type="text" placeholder="Enter street address" required />
+                        <input type="text" placeholder="Enter street address line 2" required />
+                        <div class="signup_column">
+                            <input type="text" placeholder="Enter your city" required />
+                            <input type="number" placeholder="Enter postal code" required />
+                        </div>
+                    </div>
+                    <div class="signup_input-box">
+                        <label for="username">Username</label>
+                        <input type="text" placeholder="Enter your username" required />
+                    </div>
+                    <div class="signup_input-box">
+                        <label for="password">Password</label>
+                        <input type="password" placeholder="Enter your password" required />
+
+                        <div class="signup_input-box">
+                            <label for="confirm_pw">Confirm Password</label>
+                            <input type="password" placeholder="Confirm Password" required />
+                        </div>
+                    </div>
+                    <button class="button" onclick="validate()">Signup Now</button>
+                </form>
+            </section>
+        </div>
+
+<!-- about -->
+<!-- about -->
+        
+<div style="text-align:center">
+    <h2 class="contact">About Us</h2>
+  </div>
+  <div class="container">
+      <div class="row">
+        <div class="column">
+              <img src="ABOUT US.png" style="width:100%">
+          </div>
+        <div class="column">
+          <h2>Welcome to Islamabad Tea Distributors!</h2>
+          <p>We are a leading tea distributor in Layyah, Pakistan, serving customers across the city for over 15 years.</p>
+          <p>Our mission is to provide the finest quality tea to our customers, sourced from the best tea gardens of Kenya and beyond. We believe in offering a diverse range of teas to cater to the varying tastes and preferences of our customers. </p>
+          <p>Our range of teas includes traditional blends, exotic flavors, and specialty teas. Whether you prefer black tea, green tea, herbal tea, or something in between, we have a tea that will suit your taste. </p>
+          <p>Our mission is to provide the finest quality tea to our customers, sourced from the best tea gardens and suppliers across Pakistan and beyond. We believe in offering a diverse range of teas to cater to the varying tastes and preferences of our customers. </p>
+          <h5>Thank you for choosing Islamabad Tea Distributors. We look forward to sharing our passion for tea with you!</h5>
+        </div>
+      </div>
+    </div>
+    
+  <!-- end about -->
+  <!-- end about -->
+
+
+  <!-- footer -->
+  <div class="footer">
+      <div class="icons">
+                <a target="_blank" href="http://wa.me/923315095385#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a target="_blank" href="https://www.instagram.com/#"><i class="fa-brands fa-instagram"></i></a>
+                <a target="_blank" href="https://www.facebook.com/shayan.raj.71#"><i class="fa-brands fa-facebook"></i></a>
+                <a target="_blank" href="https://mail.google.com/mail#"><i class="fa-brands fa-google-plus"></i></a>
+            </div>
+        </div>
+
+        <!-- end footer -->
+        <script src="about.js"></script>
+
+</body>
+</html>

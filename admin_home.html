@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN</title>
+    <link rel="stylesheet" href="admin_home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+
+</head>
+<body>
+    <!-- navbar -->
+
+    <div class="navbar">
+        <a href="#home">Home</a>
+
+        <section class="supplier">
+            <div class="dropdown">
+                <button class="dropbtn">Supplier 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#"><button id="addSupplier">Add Supplier</button></a>
+                <a href="#"><button id="searchSupplier">Search Supplier</button></a>
+                <a href="#"><button>Update Supplier</button></a>
+            </div>  
+    </div> 
+        </section>
+
+        <section class="shopkeeper">
+            <div class="dropdown">
+                <button class="dropbtn">Shopkeeper
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                
+                <a href="#"><button id="add_shopkeeper_form_open">Add Shopkeeper</button></a>
+                <a href="#"><button id="searchShopkeeper">Search Shopkeeper</button></a>
+                <a href="#"><button>Update Shopkeeper</button></a>
+                <a href="#"><button>Block/Unblock Shopkeeper</button></a>
+                <!-- <a href="#"><button>Unblock Shopkeeper</button></a> -->
+            </div>  
+    </div>  
+        </section>
+
+
+        <section class="product">
+            <div class="dropdown">
+                <button class="dropbtn">Product
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#"><button id="add_product_form_open"> Add Product</button></a>
+                <a href="#"><button> Search Product</button></a>
+                <a href="#"><button> Update Product</button></a>
+                <a href="#"><button> Disable/Enable Product</button></a>
+                <a href="#"><button> View Products</button></a>
+            </div>  
+    </div>  
+        </section>
+
+        <section class="order">
+            <div class="dropdown">
+                <button class="dropbtn">Order
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#"><button> Order Recipt</button></a>
+                <a href="#"><button> View Orders</button></a>
+
+            </div>  
+    </div>  
+        </section>
+
+        <section class="delivery">
+            <div class="dropdown">
+                <button class="dropbtn">Delivery
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#"><button> View All Deliveries</button></a>
+                <a href="#"><button> View Pending Deliveries</button></a>
+                <a href="#"><button> View Total Deliveries</button></a>
+            </div>  
+    </div>  
+        </section>
+
+        <section class="complain">
+            <div class="dropdown">
+                <button class="dropbtn">Complain
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#"><button> View Complain</button></a>
+                <a href="#"><button> Response Complain</button></a>
+
+            </div>  
+    </div>  
+        </section>
+
+         <button id="logoutbtn">Logout</button>
+    </div>
+
+<!-- end navbar -->
+<h4>RAMZAN TRADERS</h4>
+<h1>ADMIN</h1>
+
+
+<!-- ADD SUPPLIER  -->
+<!-- ADD SUPPLIER  -->
+<!-- <div> -->
+    <section class="home">
+    <div class="form_container_add_supplier" id="form_container">
+        <i class="uil uil-times form_close"></i>
+        <div class="form">
+            <form action="add-supplier.php">
+                <H2>Add Supplier</H2>
+                <div class="input_box">
+                    <label for="supplierName">Supplier</label>
+                    <input type="text" id="supplierName" name="supplier_name" placeholder="Enter Supplier Name">
+                </div>
+                <div class="input_box">
+                    <label for="supplierConatct">Contact</label>
+                    <input type="text" id="supplierContact" name="supplier_contact" required placeholder="Enter Contact">
+                </div>
+                  <div class="input_box">
+                    <label for="supplierAddress">Address</label>
+                    <input type="text" id="supplierAddress" name="supplier_address" required placeholder="Enter Address">
+                </div>
+
+                <button class="button">Add Supplier</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!--end ADD SUPPLIER  -->
+<!--end ADD SUPPLIER  -->
+
+<!-- Search SUPPLIER  -->
+<!-- Search SUPPLIER  -->
+<div>
+
+    <section class="searchSupplierHome">
+    <div id="" class="form_container_search_supplier" id="form_container">
+        <i class="uil uil-times form_close_search_supplier"></i>
+        <div class="form">
+            <form action="#">
+                <H2>Search Supplier</H2>
+                <div class="input_box">
+                    <label for="supplierNameSearch">Search By Name</label>
+                    <input type="text" id="supplierName" placeholder="Enter Supplier Name">
+                </div>
+                <button class="button">Search Supplier</button>
+            </form>
+        </div>
+    </div>
+</section>
+</div>
+
+<!--end SEARCH SUPPLIER  -->
+<!--end SEARCH SUPPLIER  -->
+
+
+<!-- Update SUPPLIER  -->
+<!-- Update SUPPLIER  -->
+<!--end Update SUPPLIER  -->
+<!--end Update SUPPLIER  -->
+
+<!-- Add Shopkeeper  -->
+<!-- Add Shopkeeper  -->
+
+<section class="add_shopkeeper_home">
+    <div class="add_shopkeeper_body" id="111">
+        <section class="add_shopkeeper_container">
+            <i  class="uil uil-times form_close_add_shopkeeper"></i>
+            <header>Add Shopkeeper</header>
+            <form action="sign_up.php" method="post" class="add_shopkeeper_form">
+                <div class="add_shopkeeper_input-box">
+                    <label for="name">Full Name</label>
+                    <input type="text" placeholder="Enter full name" name="name" required />
+                </div>
+
+                <div class="add_shopkeeper_input-box">
+                    <label for="cnic">CNIC</label>
+                    <input type="number" id="cnic " placeholder="Enter your CNIC" name="cnic" required />
+                </div>
+
+                <div id="ibox">
+                    <i class="ibox" id="incorrect_cnic"></i>
+                </div>
+                
+                <div class="add_shopkeeper_input-box">
+                    <label>Shop Name</label>
+                    <input type="text" placeholder="Enter shop name" name="shopName" required />
+                </div>
+
+                <div class="add_shopkeeper_column">
+                    <div class="add_shopkeeper_input-box">
+                        <label>Phone Number </label>
+                        <input type=”number” id="phoneNumberInput" placeholder="Enter phone number" name="contactNo" required>
+
+                    </div>
+                </div>
+                <div class="add_shopkeeper_input-box address">
+                    <label for="address">Address</label>
+                    <input type="text" placeholder="Enter address" name="address" required />
+                    <div class="add_shopkeeper_column">
+                        <input type="text" placeholder="Enter your city" name="city" required />
+                        <input type="number" placeholder="Enter postal code" name="postalCode" required />
+                    </div>
+                </div>
+                <div class="add_shopkeeper_input-box">
+                    <label for="username">Username</label>
+                    <input type="text" placeholder="Enter your username" name="userName" required />
+                </div>
+                <div class="add_shopkeeper_input-box">
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Enter your password" name="password" required />
+
+                    <div class="add_shopkeeper_input-box">
+                        <label for="confirm_pw">Confirm Password</label>
+                        <input type="password" placeholder="Confirm Password" name="confirmPassword" required />
+                    </div>
+                </div>
+                <button class="button" name="shopkeeper" >Add Shopkeeper</button>
+            </form>
+        </section>
+    </div>
+</section>
+
+<!-- search shopkeeper  -->
+<!-- search shopkeeper  -->
+
+<div>
+<section class="search_shopkeeper_home">
+    <div class="form_container_search_shopkeeper" id="form_container">
+        <i class="uil uil-times form_close_search_shopkeeper"></i>
+        <div class="form">
+            <form action="searchShopkeeper.php">
+                <H2>Search Shopkeeper</H2>
+                <!-- <div class="input_box">
+                    <label for="searchShopkeeperName">Search By Name</label>
+                    <input type="text" id="searchShopkeeperName" name="search_shopkeeper_name" placeholder="Search by name">
+                </div> -->
+                <div class="input_box">
+                    <label for="searchShopkeeperShopName">Search By Shop Name</label>
+                    <input type="text" id="searchShopkeeperShopName" name="search_shopkeeper_shop_name" required placeholder="Enter name">
+                </div>
+                  <!-- <div class="input_box">
+                    <label for="supplierAddress">Address</label>
+                    <input type="text" id="supplierAddress" name="supplier_address" required placeholder="Enter Address">
+                </div> -->
+
+                <button class="button">Search</button>
+            </form>
+        </div>
+    </div>
+</section>
+</div>
+
+<!-- end search shopkeeper  -->
+<!-- end search shopkeeper  -->
+
+<!-- Add product  -->
+<!-- Add product  -->
+<div class="add_product_home">
+
+    <div class="container">
+        <i  class="uil uil-times form_close_add_product"></i>
+        <div class="title">Add Product</div>
+        <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Product Name</span>
+            <input type="text" placeholder="Enter product name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Quantity</span>
+            <input type="number" placeholder="In grams (1kg=1000gram)" required>
+          </div>
+          <div class="input-box">
+              <span class="details">Cost Price</span>
+              <input type="text" placeholder="Enter cost price" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Sale Price</span>
+                <input type="text" placeholder="Enter sale price" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Company Name</span>
+              <input type="text" placeholder="Enter company name" required>
+            </div>
+          <div class="input-box">
+            <span class="details">Product Image</span>
+            <input id="imageFile" type="file" placeholder="Choose Image" required>
+          </div>
+          
+        </div>
+
+        <div class="button">
+            <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+</div>
+</div>
+<!-- End Add Product  -->
+<!-- End Add Product  -->
+
+<!-- search product  -->
+<!-- search product  -->
+<!-- end search product  -->
+<!-- end search product  -->
+
+<!-- update product  -->
+<!-- update product  -->
+<!-- end update product  -->
+<!-- end update product  -->
+
+    
+<script src="admin_home.js"></script>
+</body>
+</html>

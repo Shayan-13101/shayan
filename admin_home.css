@@ -1,0 +1,718 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background-color: aliceblue;
+  }
+
+h1{
+    color:rgba(255, 99, 71, 0.517);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 200px;
+    display: inline-block;
+    margin: 0% 20% 10% 20%;
+    opacity: 0.3;
+    z-index: 1;
+
+}
+h4{
+    color:crimson;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    display: inline-block;
+    margin: 5% 30% 0% 30%;
+
+}
+/* h1:hover{
+    color:rgb(255, 99, 71);
+    transition: 0.5s ease-in-out;
+} */
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    z-index: 1;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 18px;
+    color:cornsilk;
+    text-align: center;
+    padding: 20px 30px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 18px;  
+    border: none;
+    outline: none;
+    color: cornsilk;
+    padding: 20px 30px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: crimson;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+    
+  .dropdown-content  a button {
+    border: none;
+    font-size: 18px;
+    background-color: rgba(0, 128, 0, 0);
+    color: rgba(128, 128, 128, 0);
+    float: none;
+    color: black;
+    /* padding: 12px 16px; */
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content  a {
+    border: none;
+    font-size: 18px;
+    background-color: rgba(243, 243, 243, 0.887);
+    color: rgba(128, 128, 128, 0);
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  .dropdown-content a button:active{
+    scale: 1.03;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  #logoutbtn{
+    border: none;
+    background-color:rgba(23, 255, 255, 0.016);
+    color: cornsilk;
+    font-size: 18px;
+    float: left;
+    font-size: 18px;
+    color:cornsilk;
+    text-align: center;
+    padding: 20px 30px;
+    text-decoration: none;
+    position: absolute;
+    left: 90%;
+    /* right: 90%; */
+  }
+
+  #logoutbtn:hover{
+    background-color: crimson;
+  }
+
+
+/* Add Supplier */
+/* Add Supplier */
+
+  
+  /* FORM  */
+.form_container_add_supplier {
+    position: absolute;
+    max-width: 320px;
+    width: 100%;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.2);
+    z-index: 1;
+    background: #fff;
+    padding: 25px;
+    opacity: 0 ;
+    pointer-events: none;
+    transition: all 0.4s ease-out;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .home.show .form_container_add_supplier {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+  
+  }
+  
+  .form_close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #0b0217;
+    font-size: 22px;
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  
+  .form_container_add_supplier h2 {
+    font-size: 22px;
+    color: crimson;
+    text-align: center;
+  }
+  
+  .input_box {
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    height: 40px;
+  }
+  
+  .input_box input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0 30px;
+    color: #333;
+    transition: all 0.5s ease;
+    border: 1.5px solid #aaaa;
+    border-radius: 4px;
+  }
+  .form_container_add_supplier label{
+    color:crimson;
+    font-size: 15px;
+    margin-bottom: 3px;
+    padding-bottom: 3px;
+  }
+  
+  .input_box input:focus {
+    border-color: crimson;
+  }
+  
+    
+  .form_container_add_supplier .button {
+    /* background: tan; */
+    color: aliceblue;
+    /* padding: 6px 24px; */
+    border: 2px solid aliceblue;
+    background: crimson;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 30px;
+    width: 100%;
+    padding: 12px 0;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  
+
+/* end Add Supplier */
+/* end Add Supplier */
+
+/* Search Supplier */
+/* Search Supplier */
+
+.form_container_search_supplier {
+  position: absolute;
+  max-width: 320px;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.2);
+  z-index: 1;
+  background: #fff;
+  padding: 25px;
+  opacity: 0 ;
+  pointer-events: none;
+  transition: all 0.4s ease-out;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.searchSupplierHome.show .form_container_search_supplier{
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+
+}
+
+.form_close_search_supplier{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #0b0217;
+  font-size: 22px;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.form_container_search_supplier h2 {
+  font-size: 22px;
+  color: crimson;
+  text-align: center;
+}
+
+.input_box {
+  position: relative;
+  margin-top: 30px;
+  width: 100%;
+  height: 40px;
+}
+
+.input_box input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0 30px;
+  color: #333;
+  transition: all 0.5s ease;
+  border: 1.5px solid #aaaa;
+  border-radius: 4px;
+}
+.form_container_search_supplier label{
+  color:crimson;
+  font-size: 15px;
+  margin-bottom: 3px;
+  padding-bottom: 3px;
+}
+
+.input_box input:focus {
+  border-color: crimson;
+}
+
+  
+.form_container_search_supplier .button {
+  /* background: tan; */
+  color: aliceblue;
+  /* padding: 6px 24px; */
+  border: 2px solid aliceblue;
+  background: crimson;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px 0;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* end Search Supplier */
+/* end Search Supplier */
+
+
+/*   Add Shopkeeper */
+/*   Add Shopkeeper */
+
+.add_shopkeeper_body {
+  position: absolute;
+  top: 190px;
+  right: 32%;
+  /* max-width: 600px; */
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 20px; */
+  /* display: none; */
+
+}
+
+
+.add_shopkeeper_container {
+  position: relative;
+  z-index: 0;
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transform: translate(-20% , -20%) scale(1.2);
+  /* opacity: 0; */
+  display: none;
+  pointer-events: none;
+  transition: all 0.4s ease-out;
+}
+
+.add_shopkeeper_home.show .add_shopkeeper_container{
+  /* opacity: 1; */
+  display: block;
+  pointer-events: auto;
+  transform: translate(0) scale(1);
+
+
+}
+
+.add_shopkeeper_container header {
+  font-size: 2rem;
+  color: crimson;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* 
+  .signup_container header:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease;
+  } */
+
+.add_shopkeeper_container .add_shopkeeper_form {
+  margin-top: 30px;
+}
+
+.add_shopkeeper_form .add_shopkeeper_input-box {
+  width: 100%;
+  margin-top: 20px;
+  color: #333;
+}
+
+.add_shopkeeper_input-box input::placeholder {
+  color: #707070;
+}
+
+.add_shopkeeper_input-box::placeholder:focus {
+  color: crimson;
+}
+
+.add_shopkeeper_input-box label {
+  color: crimson;
+}
+
+.add_shopkeeper_form :where(.add_shopkeeper_input-box input) {
+  position: static;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+
+.add_shopkeeper_input-box input:focus {
+  box-shadow: 0 1px 0 rgba(72, 72, 72, 0.2);
+  border-color: crimson;
+}
+
+.add_shopkeeper_form .add_shopkeeper_column {
+  display: flex;
+  column-gap: 15px;
+}
+
+.add_shopkeeper_form {
+  margin-top: 20px;
+  column-gap: 5px;
+}
+
+
+.add_shopkeeper_form button {
+  height: 55px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: crimson;
+}
+
+.add_shopkeeper {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 15px;
+  color: hsl(0, 0%, 44%);
+}
+
+
+.form_close_add_shopkeeper{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #0b0217;
+  font-size: 22px;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+/* end  Add Shopkeeper */
+/* end  Add Shopkeeper */
+
+/* search shopkeeper  */
+/* search shopkeeper  */
+
+.form_container_search_shopkeeper{
+  position: absolute;
+  max-width: 320px;
+  width: 100%;
+  top: 63%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.2);
+  z-index: 1;
+  background: #fff;
+  padding: 25px;
+  display: none;
+  pointer-events: none;
+  transition: all 0.4s ease-out;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.search_shopkeeper_home.show .form_container_search_shopkeeper{
+  display: block;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+
+}
+
+.form_close_search_shopkeeper{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #0b0217;
+  font-size: 22px;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.form_container_search_shopkeeper h2 {
+  font-size: 22px;
+  color: crimson;
+  text-align: center;
+}
+
+.input_box {
+  position: relative;
+  margin-top: 30px;
+  width: 100%;
+  height: 40px;
+}
+
+.input_box input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0 30px;
+  color: #333;
+  transition: all 0.5s ease;
+  border: 1.5px solid #aaaa;
+  border-radius: 4px;
+}
+.form_container_search_shopkeeper label{
+  color:crimson;
+  font-size: 15px;
+  margin-bottom: 3px;
+  padding-bottom: 3px;
+}
+
+.input_box input:focus {
+  border-color: crimson;
+}
+
+  
+.form_container_search_shopkeeper .button {
+  /* background: tan; */
+  color: aliceblue;
+  /* padding: 6px 24px; */
+  border: 2px solid aliceblue;
+  background: crimson;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 30px;
+  width: 100%;
+  padding: 12px 0;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* end search shopkeeper  */
+/* end search shopkeeper  */
+
+
+/* add product */
+/* add product */
+
+
+.container{
+  max-width: 700px;
+  width: 100%;
+  height: 40;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  position: absolute;
+  top: 30%;
+  left: 22%;
+  display: none;
+  pointer-events: none;
+}
+
+.add_product_home.show .container{
+  /* opacity: 1; */
+  display: block;
+  pointer-events: auto;
+  transform: translate(0) scale(1);
+}
+.container .title{
+  font-weight: 1000;
+  font-size: 30px;
+  text-align: center;
+  color: crimson;
+}
+
+.content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+form .input-box span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: crimson;
+}
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+}
+.user-details .input-box input:focus{
+  border-color: crimson;
+}
+
+ /* form .category{
+   display: flex;
+   width: 80%;
+   margin: 14px 0 ;
+   justify-content: space-between;
+ } */
+ /* form .category label{
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+ }
+ form .category label {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+  color: crimson;
+} */
+
+
+ form .button{
+   height: 45px;
+   margin: 35px 0
+ }
+ form .button input{
+   height: 100%;
+   width: 100%;
+   border-radius: 5px;
+   border: none;
+   color:cornsilk;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background: crimson;
+ }
+ form .button input:hover{
+  transform: scale(0.99);
+
+  }
+  .form_close_add_product{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #0b0217;
+    font-size: 22px;
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  #imageFile{
+    text-decoration: none;
+    background: none;
+    border: none;
+  }
+ @media(max-width: 584px){
+ .container{
+  max-width: 100%;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  form .category{
+    width: 100%;
+  }
+  .content form .user-details{
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar{
+    width: 5px;
+  }
+  }
+  @media(max-width: 459px){
+  .container .content .category{
+    flex-direction: column;
+  }
+}
+
+/* end add product */
+/* end add product */
